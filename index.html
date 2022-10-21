@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://getbootstrap.com/docs/4.0/examples/blog/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+  <title>Yu-Gi-Oh</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./public/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./public/styles.css" rel="stylesheet">
+  <link href="./public/blog.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="text-muted" href="#">Subscribe</a>
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="#"></a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="text-muted" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3">
+              <circle cx="10.5" cy="10.5" r="7.5"></circle>
+              <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+            </svg>
+          </a>
+          <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="#inicio">Inicio</a>
+        <a class="p-2 text-muted" href="#tabla">Tabla</a>
+        <a class="p-2 text-muted" href="#video">Video</a>
+        <a class="p-2 text-muted" href="#formulario">Formulario</a>
+      </nav>
+    </div>
+
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+      <div class="col-md-12 px-0">
+        <img class="img-fluid" src="./public/banner.jpg" alt="" srcset="">
+      </div>
+    </div>
+
+
+    <main id="inicio" role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <div class="blog-post">
+            <h2 class="blog-post-title">Yu-Gi-Oh!</h2>
+            <p class="blog-post-meta">Octubre 30 de 1996 <a target="_blank"
+                href="https://yugioh.fandom.com/es/wiki/Kazuki_Takahashi">Kazuki Takahashi</a></p>
+
+            <p>
+              El manga fue uno de los títulos más populares ofrecidos en el Weekly Shōnen Jump de Shūeisha.
+              El manga español tiene el nombre japonés, pero el anime español y latinoamericano tiene el nombre
+              americano.
+
+              El anime fue producido por Studio Gallop, y traducido más adelante a más de veinte idiomas y
+              vendido en más de sesenta países. Finalizó el 29 de septiembre de 2004 con doscientos veinticuatro
+              episodios.
+            </p>
+            <p>
+              La obra trata sobre la historia un joven llamado Yūgi Mutō el cual es un Duelista aficionado, quien porta
+              el Rompecabezas del milenio, uno de los siete Objetos Milenarios que se lo había regalado su abuelo.
+
+              Esta serie a tenido varios spin-off; Yu-Gi-Oh! GX, Yu-Gi-Oh! 5D's, Yu-Gi-Oh! ZEXAL, Yu-Gi-Oh! ARC-V,
+              Yu-Gi-Oh! VRAINS y la más reciente Yu-Gi-Oh! SEVENS. En cada una de estas se han introducido varias reglas
+              nuevas y nuevos tipos de invocación de monstruos.
+            </p>
+          </div><!-- /.blog-post -->
+
+          <div id="formulario" class="blog-post">
+            <h2 class="blog-post-title">Formulario</h2>
+            <form>
+              <div class="form-row">
+
+                <div class="form-group col-md-6">
+                  <label for="txt-personaje">Personaje</label>
+                  <input type="text" class="form-control" id="txt-personaje" placeholder="Personaje">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="txt-rango">Rango</label>
+                  <input type="text" class="form-control" id="txt-rango" placeholder="Rango">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="txt-color-pelo">Color pelo</label>
+                  <input type="text" class="form-control" id="txt-color-pelo" placeholder="Color pelo">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="txt-arma">Arma</label>
+                  <input type="text" class="form-control" id="txt-arma" placeholder="Arma">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="txt-tipo-arma">Tipo arma</label>
+                  <input type="text" class="form-control" id="txt-tipo-arma" placeholder="Tipo arma">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="txt-genero">Género</label>
+                  <select id="txt-genero" class="form-control">
+                    <option selected></option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="Guardar(event)">Guardar</button>
+            </form>
+
+          </div><!-- /.blog-post -->
+
+          <div id="tabla" class="blog-post table-responsive">
+            <h2 class="blog-post-title">Tabla</h2>
+            <table class="table table-hover " style="width: 100%;">
+              <thead>
+                <tr>
+                  <th scope="col">Personaje</th>
+                  <th scope="col">Rango</th>
+                  <th scope="col">Color pelo</th>
+                  <th scope="col">avatar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Yami Yugi</td>
+                  <td>Faraon</td>
+                  <td>Amarillo-fuscia</td>
+                  <td><img style="height: 50px;" src="https://ms.yugipedia.com//c/c4/YamiYugi-DULI.png"></td>
+                </tr>
+                <tr>
+                  <td>Seto Kaiba</td>
+                  <td>Duelista</td>
+                  <td>Cafe</td>
+                  <td><img style="height: 50px;" src="/public/seto.PNG">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bakura</td>
+                  <td>Duelista</td>
+                  <td>Blanco</td>
+                  <td><img style="height: 50px;"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6cfPaHSPUQo9ko1YQR9Kw1j_VvGgjhVyCW_4JqqeZ&usqp=CAE&s">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- /.blog-post -->
+
+          <div id="video" class="blog-post">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/iEa9SMUL7Us"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <nav class="blog-pagination">
+            <a class="btn btn-outline-primary" href="#">Older</a>
+            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">About</h4>
+            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit
+              amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Archives</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+            </ol>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </aside><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Derechos reservados <a target="_blank"
+          href="#">Johana Sepúlveda</a>
+        by <a href="#">@Johana Sepúlveda</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./public/jquery-3.2.1.slim.min.js"></script>
+    <script src="./public/popper.min.js"></script>
+    <script src="./public/bootstrap.min.js"></script>
+    <script src="./public/holder.min.js"></script>
+    <script src="./public/app.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250" preserveAspectRatio="none"
+      style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
+      <defs>
+        <style type="text/css"></style>
+      </defs><text x="0" y="13"
+        style="font-weight:bold;font-size:13pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text>
+    </svg>
+</body>
+
+</html>
